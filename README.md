@@ -1,6 +1,6 @@
-# CPSC-459/559 Fall 2025. Assignments
+# CPSC-4590/5590 Fall 2025. Assignments
 
-Assignment repository for Yale's [CPSC-459/559 Building Interactive Machines](https://cpsc459-bim.gitlab.io/f25/) (Fall 2025).
+Assignment repository for Yale's [CPSC-4590/5590 Building Interactive Machines](https://cpsc459-bim.gitlab.io/f25/) (Fall 2025).
 
 ## General Instructions
 
