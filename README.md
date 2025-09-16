@@ -30,7 +30,7 @@ You can discuss assignment problems with the instructor, the teaching staff and 
 
 You may consult AI to understand bugs and how ROS works. However, code that is fully implemented by ChatGPT etc may not be submitted. We submit all questions to ChatGPT before the assignment is circulated, so we know what those answers look like. That said,  we will not go to great lengths to uncover such violations for the assignments, and we won’t worry about ambiguous situations.  The purpose of the assignments is to learn the material, and to practice answering the kinds of questions that will appear on the corresponding tests. So while it might be possible to spend less time and get better grades on the assignments themselves by submitting the work of others (human or artificial), in the long run this approach will result in the student spending more time and/or or doing less well on the course as a whole, and is thus a losing strategy. 
 
-For every assignment, you need to submit a disclosure.txt file that documents: 
+For every assignment, you need to submit a report that documents: 
 1) which people you discussed your assignment with; 
 2) which AI tool (if any) you used while working on your assignment; and
 3) how you used the AI tool.
