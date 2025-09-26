@@ -51,9 +51,9 @@ to generate a new SSH key in your machine and [upload your public key](https://d
     # Example
     $ cd <username>-cpsc4590-assignments
  
-    # and check the status of your repository (you should be in the master branch of your repository)
+    # and check the status of your repository (you should be in the main branch of your repository)
     $ git status
-    On branch master
+    On branch main
     (...)
     ```
 
@@ -86,7 +86,7 @@ which contains the set of assignments and starter code.
 
     ```bash
     # Example
-    $ git push origin master
+    $ git push origin main
     ```
 
 7. Verify that the commits from upstream are now present in your own GitHub project by checking the project's page in GitHub.
@@ -117,11 +117,11 @@ Once your repository is setup, you will need to follow the steps below when work
     officially "out" per the course [schedule](https://cpsc459-bim.gitlab.io/f25/schedule/). 
 	
 	Once you have resolved any merge conflicts and all commits from
-	upstream are merged successfully to your own master branch, push it 
+	upstream are merged successfully to your own main branch, push it 
 	back to your own GitHub repository:
 	
 	```bash
-	$ git push origin master
+	$ git push origin main
 	```
 	
 	> NOTE: Please consult your T.F.(s) if you have difficulty resolving merge conflict(s).
