@@ -141,7 +141,7 @@ it refers to the second version of the tf package. This is the standard transfor
 3. Then, open up RViz2 using the [ros2 run](https://docs.ros.org/en/jazzy/Tutorials/Beginner-CLI-Tools/Understanding-ROS2-Nodes/Understanding-ROS2-Nodes.html) tool:
 
     ```
-    $ ros2 run rviz2 rviz2
+    $ ros2 run rviz2 rviz2 --ros-args -p use_sim_time:=true
     ```
 
     > The `ros2 run <package> <executable>` tool above allows you to run an executable in an arbitrary ROS 2 package. In the above command in particular,
