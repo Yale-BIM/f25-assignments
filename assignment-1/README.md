@@ -263,10 +263,10 @@ given the increased complexity of this node in comparison previous examples. For
         and the "camera_color_optical_frame" using the `lookup_transform` function from the tf2 API. 
         Make sure to query the transformation at the time when the target pose was computed.
 
-            > Tip 1: You can take a look at this ROS 2 tutorial on [writing a tf2 listener](https://docs.ros.org/en/jazzy/Tutorials/Intermediate/Tf2/Learning-About-Tf2-And-Time-Py.html)
+            > Tip 1: You can take a look at this ROS 2 tutorial on [writing a tf2 listener](https://docs.ros.org/en/jazzy/Tutorials/Intermediate/Tf2/Writing-A-Tf2-Listener-Py.html)
             for some examples on using the tf2 API.
              
-            > Tip 2: You can use the [tf2_geometry_msgs](https://docs.ros.org/en/jazzy/Tutorials/Intermediate/Tf2/Learning-About-Tf2-And-Time-Py.html) API to transform the pose of the object
+            > Tip 2: You can use the [tf2_geometry_msgs](https://index.ros.org/p/tf2_geometry_msgs/) API to transform the pose of the object
             as in [this post](https://answers.ros.org/question/222306/transform-a-pose-to-another-frame-with-tf2-in-python/).
             
         - Broadcast a tf2 transform between the "camera_color_optical_frame" frame (parent) and a new "target" frame (child) in tf2. 
@@ -521,7 +521,7 @@ the virtual camera that you already implemented is working correctly.
     The bag should have all of the messages that are streamed in your system for a duration of 8 seconds.
     
     ```bash
-    $ ros2 bag record -o <your-name>_a1p3-2.bag -a --duration 8 --use-sim-time
+    $ timeout 8 ros2 bag record -o <your-name>_a1p3-2.bag -a
     ```
     
     > You can see a description of the arguments that `ros2 bag record` accepts [here](https://docs.ros.org/en/jazzy/Tutorials/Beginner-CLI-Tools/Recording-And-Playing-Back-Data/Recording-And-Playing-Back-Data.html). Make sure to start the generate_target.launch.py file and your virtual camera before starting to record the bag, or the bag might end up being empty!
