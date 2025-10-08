@@ -8,8 +8,6 @@ This is the second assignment for Yale's CPSC-4590/5590 Building Interactive Mac
     * [System Requirements](#system-requirements)
     * [Background Knowledge](#background-knowledge)
     * [Preliminaries](#preliminaries)
-       * [Training on Google Colaboratory](#training-on-google-colaboratory)
-       * [Training on Google Cloud](#training-on-google-cloud)
     * [Deliverables](#deliverables)
     * [Evaluation](#evaluation)
 * [Setup](#setup)
