@@ -98,7 +98,7 @@ $ cd <path-to-your-ros2-workspace>
 $ colcon build --cmake-args -DCMAKE_BUILD_TYPE=Release
 ```
 
-You can verify your TensorFlow installation as follows:
+You can verify your PyTorch installation as follows:
 
 ```bash
 $ python3 -c "import torch; print(torch.__version__)"
@@ -145,7 +145,7 @@ as in the figure below:
 <img src="docs/training-val-data.png" width="600"/>
 
 And, once the linear model is trained for a number of epochs with the 
-[Adam optimizer](https://www.tensorflow.org/api_docs/python/tf/keras/optimizers/Adam), the script would show a figure like the one below:
+[Adam optimizer](https://docs.pytorch.org/docs/stable/generated/torch.optim.Adam.html), the script would show a figure like the one below:
 
 <img src="docs/fit-linear.png" width="600"/>
 
