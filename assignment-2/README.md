@@ -451,7 +451,7 @@ your model and computes new poses for Shutter to follow the target. More specifi
     **NOTE 2:** Your model files will be downloaded from Google Drive automatically
     and tested on the virtual robot on 20 trials. The number of trials for which you get an acceptable output (as defined above) will set 50% of your grade for this part of the assignment. 
     
-    **NOTE 3:** The student(s) with the minimum average error: `avg(diff_j1 + diff_j3)` up to 3 point precision will receive 2 extra points in their final course grade. Multiple submissions to this assignment are allowed in Gradescope. There will be two parallel leaderboards: one for 4590, and one for 5590. Thus, at least 2 students are expected to get extra points for this part of the assignment (one enrolled in 4590 and one in 5590).
+    **NOTE 3:** The student(s) with the minimum average error: `avg(diff_j1 + diff_j3)` up to 3 point precision will receive 2 extra points in their final course grade. We will evaluate projects by class: students in 4590 will only compete against other students in 4590 for the extra points; and students in 5590 will compete against other students taking the graduate-course only. Thus, at least 2 students are expected to get extra points for this part of the assignment (one enrolled in 4590 and one in 5590).
     
 
 ## Part III. Real-Time Filtering
