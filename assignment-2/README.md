@@ -276,7 +276,7 @@ and train its weights further (e.g., to resume training or for fine-tuning on a 
     # ---- end of lines to be added ----
         
     # run the main function
-    main(args.n, args.epochs, args.lr, args.visualize_training_data, build_fn=build_fn)
+    main(args.n, args.epochs, args.lr, args.visualize_training_data, build_fn=build_fn, batch_size=args.batch_size)
     sys.exit(0)
     ```
         
