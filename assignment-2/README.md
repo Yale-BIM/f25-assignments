@@ -68,8 +68,7 @@ You assignment will be evaluated based on the content of your report and your co
 
 Students taking CPSC-4590 will be evaluated over 180 pts. Those taking CPSC-5590, will be evaluated over 220 pts.
 
-**Note on Part II of the assignment:** Part II provides extra credit for those at the top of the leaderboard in Gradescope.
-The extra credit (2 pts) will be counted for the final course grade 
+**Note on Part II of the assignment:** Part II provides extra credit for the students that obtain best performance in this part of the assignment. The extra credit (2 pts) will be counted for the final course grade 
 (beyond whatever points students get for this assignment). 
 
 ## Setup
