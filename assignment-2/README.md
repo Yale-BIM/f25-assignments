@@ -431,7 +431,7 @@ be placed within the `assignment-2/shutter_behavior_cloining/scripts` directory.
     `https://drive.google.com/file/d/<file_id>/view?usp=sharing`, then you should add 
     `https://drive.google.com/uc?id=<file_id>` to the script for the evaluation with Gradescope to run successfully.
     
-- **II-2.** Complete the `assignment-2/shutter_behavior_cloining/scripts/run_policy.py` script so that it loads up 
+- **II-2.** Complete the `assignment-2/shutter_behavior_cloning/src/run_policy.py` script so that it loads up 
 your model and computes new poses for Shutter to follow the target. More specifically, update the `__init__` function in the script to load up your model from disk using the model file path and normalization params provided to the node via:
     ```python
     self.model_file = self.get_parameter("model").value              # required path to model file
