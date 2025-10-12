@@ -405,7 +405,7 @@ The output action is 2-dimensional. It corresponds to the new position for the r
 
 - **II-1.** Generate data for behavioral cloning as explained in the prior section, and implement a script to learn
 an imitation policy from this data using the PyTorch API. The script should be called `learn_policy.py` and 
-be placed within the `assignment-2/shutter_behavior_cloining/scripts` directory. 
+be placed within the `assignment-2/shutter_behavior_cloning/scripts` directory. 
 
     The script should:
      
