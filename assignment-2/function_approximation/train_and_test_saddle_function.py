@@ -6,6 +6,7 @@ import sys
 import argparse
 import datetime
 import numpy as np
+import random
 import torch
 import torch.nn as nn
 import torch.optim as optim
@@ -247,6 +248,11 @@ def main(num_examples, epochs, lr, visualize_training_data, build_fn=build_linea
     """
 
     np.random.seed(0) # make the generated values deterministic. do not change!
+    torch.manual_seed(0)
+    if torch.cuda.is_available():
+        torch.cuda.manual_seed(0)
+        torch.cuda.manual_seed_all(0) # For multi-GPU
+    random.seed(0)
     
     # generate data
     monkey_function = lambda x: np.power(x[0], 3) - 3*x[0]*np.power(x[1],2)
