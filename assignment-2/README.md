@@ -263,15 +263,17 @@ and train its weights further (e.g., to resume training or for fine-tuning on a 
     # ---- lines to be added ----
     # load model (and thus, ignore prior build function)
     if len(args.load_model) > 0:
+        # Store the original build_fn before overriding it
+        original_build_fn = build_fn
+
         def load_pytorch_model(num_inputs):
             # Use the build_fn parameter to determine model type
-            model = build_fn(num_inputs)
+            model = original_build_fn(num_inputs)
             # Load state dict
             device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
             model.load_state_dict(torch.load(args.load_model, map_location=device))
             return model
-        # Store the original build_fn before overriding it
-        original_build_fn = build_fn
+
         build_fn = load_pytorch_model
     # ---- end of lines to be added ----
         
