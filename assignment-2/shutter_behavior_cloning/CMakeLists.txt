@@ -22,20 +22,19 @@ find_package(tf2_geometry_msgs REQUIRED)
 find_package(shutter_lookat REQUIRED)
 find_package(shutter_bringup REQUIRED)
 
-set(MODEL_PATH "?????????")
-set(NORM_PARAMS_PATH "")
-
 # Install Python modules
 # ament_python_install_package(${PROJECT_NAME})
 
 # Install Python executables
-file(GLOB PYTHON_SRC_FILES "src/*.py")
-file(GLOB PYTHON_SCRIPT_FILES "scripts/*.py")
-install(PROGRAMS
-  ${PYTHON_SRC_FILES}
-  ${PYTHON_SCRIPT_FILES}
+install(DIRECTORY scripts/
   DESTINATION lib/${PROJECT_NAME}
-)
+  USE_SOURCE_PERMISSIONS
+  FILES_MATCHING PATTERN "*.py")
+
+install(DIRECTORY src/
+  DESTINATION lib/${PROJECT_NAME}
+  USE_SOURCE_PERMISSIONS
+  FILES_MATCHING PATTERN "*.py")
 
 # Install launch files
 install(DIRECTORY
