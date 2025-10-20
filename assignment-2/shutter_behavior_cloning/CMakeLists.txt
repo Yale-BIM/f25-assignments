@@ -26,15 +26,13 @@ find_package(shutter_bringup REQUIRED)
 # ament_python_install_package(${PROJECT_NAME})
 
 # Install Python executables
-install(DIRECTORY scripts/
+file(GLOB PYTHON_SRC_FILES "src/*.py")
+file(GLOB PYTHON_SCRIPT_FILES "scripts/*.py")
+install(PROGRAMS
+  ${PYTHON_SRC_FILES}
+  ${PYTHON_SCRIPT_FILES}
   DESTINATION lib/${PROJECT_NAME}
-  USE_SOURCE_PERMISSIONS
-  FILES_MATCHING PATTERN "*.py")
-
-install(DIRECTORY src/
-  DESTINATION lib/${PROJECT_NAME}
-  USE_SOURCE_PERMISSIONS
-  FILES_MATCHING PATTERN "*.py")
+)
 
 # Install launch files
 install(DIRECTORY
