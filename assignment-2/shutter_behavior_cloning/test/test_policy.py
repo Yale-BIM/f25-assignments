@@ -255,7 +255,7 @@ class TestPolicy(unittest.TestCase):
         self.node.fid = open(self.node.output_file, 'w')
 
         # get robot model
-        self.node.move = True
+        self.node.move = False
 
         # make positions repeatable
         np.random.seed(0)
